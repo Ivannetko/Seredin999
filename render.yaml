@@ -1,13 +1,16 @@
+# Render Static Site — https://render.com/docs/static-sites
 services:
   - type: web
     name: seredin999
     runtime: static
-    buildCommand: npm install && npm run build
+    branch: main
+    buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
-    pullRequestPreviewsEnabled: true
     envVars:
       - key: NODE_VERSION
         value: "20"
+    previews:
+      generation: automatic
     routes:
       - type: rewrite
         source: /*

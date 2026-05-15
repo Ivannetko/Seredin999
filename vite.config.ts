@@ -36,11 +36,7 @@ export default defineConfig({
   assetsInclude: ['**/*.svg', '**/*.csv'],
   build: {
     outDir: 'dist',
+    emptyOutDir: true,
     sourcemap: false,
-  },
-  preview: {
-    host: true,
-    port: Number(process.env.PORT) || 4173,
-    strictPort: true,
   },
 })
