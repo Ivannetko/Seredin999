@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "postinstall": "node scripts/render-build.mjs"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",

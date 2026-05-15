@@ -2,7 +2,7 @@ services:
   - type: web
     name: seredin999
     runtime: static
-    buildCommand: npm ci && npm run build
+    buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: true
     envVars:
